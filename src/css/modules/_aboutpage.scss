@@ -1,0 +1,114 @@
+#nav-background {
+    height: 150px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 9%, rgba(230,224,223,1) 23%, rgba(194,180,176,1) 40%, rgba(171,152,146,1) 53%, rgba(69,28,16,1) 100%);
+}
+#about-page-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $headingfont;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+//=============================================================
+//                         About Cards
+//=============================================================
+
+#about-post-section {
+    padding: 50px 30px;
+    h2 {
+        width: 100%;
+        text-align: left;
+        font-family: $headingfont;
+        color: $orange;
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    #about-post-container {
+        display: flex;
+        flex-wrap: wrap;
+        .about-post-card {
+            background-color: $lightorange;
+            padding: 20px;
+            margin-bottom: 20px;
+            h3 {
+                margin-bottom: 15px;
+                font-family: $headingfont;
+                color: $red;
+                font-weight: 400;
+                font-size: 25px;
+            }
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+            .about-text {
+                height: 200px;
+                overflow: hidden;
+                font-family: $mainfont;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            a {
+                text-decoration: none;
+            }
+            #about-item-button {
+                margin-top: 15px;
+                color: $orange;
+                font-family: $mainfont;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 18px;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+            }
+            #about-item-button:hover{
+                color: $red;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 420px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    #about-post-section {
+        padding:  50px 70px;
+        #about-post-container {
+            justify-content: space-between;
+            .about-post-card {
+                width: 49%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #about-page-heading {
+        margin-top: 30px;
+        font-size: 50px;
+    }
+    #about-post-section {
+        h2 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #about-post-section {
+        padding:  70px 100px;
+        #about-post-container {
+            justify-content: space-between;
+            .about-post-card {
+                width: 32%;
+            }
+        }
+    }
+}

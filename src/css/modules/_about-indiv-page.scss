@@ -1,0 +1,129 @@
+#about-indiv-page {
+    padding: 30px 30px 50px 30px;
+    #about-post-indiv {
+        width: 100%;
+        h2 {
+            font-family: $headingfont;
+            color: $red;
+            font-size: 25px;
+            font-weight: 400;
+            margin-bottom: 55px;
+        }
+        #about-img-indiv-page {
+            width: 100%;
+        }
+        .about-content-indiv-page {
+            margin-top: 20px;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            line-height: 21px;
+            p {
+                margin-bottom: 20px;
+            }
+            ul {
+                margin-bottom: 20px;
+            }
+        }
+        #back-button {
+            @include page-btn;
+            background-color: $orange;
+            margin-right: 10px;
+            svg {
+                margin-bottom: -2px;
+                margin-right: 2px;
+            }
+        }
+        #back-button:hover {
+            color: $red
+        }
+        #to-about-page {
+            @include page-btn;
+            background-color: $red;
+            margin-right: 10px;
+            width: 140px;
+            svg {
+                margin-bottom: -2px;
+                margin-right: 2px;
+            }
+        }
+        #to-about-page:hover {
+            color: $orange
+        }
+    }
+    #other-about-post-section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 420px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    #about-indiv-page {
+        padding: 30px 50px;
+        #about-img-indiv-page {
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #about-indiv-page {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 70px 50px;
+        #about-post-indiv {
+            width: 70%;
+            padding-right: 50px;
+        }
+        #other-about-post-section {
+            display: block; 
+            width: 30%;
+            text-align: right;
+            h3 {
+                font-family: $headingfont;
+                color: $red;
+                font-size: 25px;
+                font-weight: 400;
+                margin-bottom: 38px;
+            }
+            #about-list {
+                margin-top: 30px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    h4 {
+                        font-family: $headingfont;
+                        font-size: 18px;
+                        font-weight: 300;
+                        cursor: pointer;
+                        transition: all .3s ease-in-out;
+                    }
+                    h4:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #about-indiv-page {
+        padding: 70px 100px;
+        #about-post-indiv {
+            width: 65%;
+            h2 {
+                font-size: 40px;
+            }
+        }
+        #other-about-post-section {
+            width: 35%;
+            h3 {
+                font-size: 40px;
+            }
+        }
+    }
+}

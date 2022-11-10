@@ -1,0 +1,105 @@
+#about-container {
+    padding: 50px 30px;
+    h3 {
+        text-align: center;
+        font-family: $headingfont;
+        color: $orange;
+        font-weight: 400;
+        font-size: 25px;
+    }
+    #about-content {
+        font-family: $mainfont;
+        .about-text {
+            height: 450px;
+            overflow: scroll;
+            margin-top: 25px;
+            p {
+                margin-bottom: 10px;
+                line-height: 30px;
+                font-size: 18px;
+            }
+        }
+        #about-img {
+            margin: 20px 0;
+            width: 100%;
+            height: 220px;
+            object-fit: cover
+        }
+    }
+    a {
+        text-decoration: none
+    }
+    button {
+        @include button;
+        margin-top: 20px;
+        margin: auto;
+        width: 200px;
+        background-color: $red;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    button:hover {
+        color: $orange;
+    }
+}
+@media screen and (min-width: 420px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    #about-container {
+        padding: 70px;
+        #about-content {
+            .about-text {
+                height: 455px;
+                margin-bottom: 15px;
+            }
+            #about-img {
+                height: 400px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #about-container {
+        #about-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            .about-text {
+                width: 55%;
+            }
+            #about-img {
+                width: 45%;
+                padding: 20px 0 20px 30px;
+                height: 455px;
+                object-position: left;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #about-container {
+        padding: 150px 150px 50px 150px;
+        h3 {
+            font-size: 35px;
+        }
+        #about-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            .about-text {
+                width: 55%;
+            }
+            #about-img {
+                width: 45%;
+                padding: 20px 0 20px 30px;
+                height: 455px;
+                object-position: left;
+            }
+        }
+    }
+}

@@ -1,9 +1,19 @@
 @import "./modules/variables";
-@import "./navbar/variables";
+@import "./modules/navbar";
+@import "./modules/home";
+@import "./modules/newsposts";
+@import "./modules/about-home";
+@import "./modules/gallery-home";
+@import "./modules/newsletter-home";
+@import "./modules/shopfront";
+@import "./modules/aboutpage";
+@import "./modules/about-indiv-page";
+@import "./modules/contactform";
+@import "./modules/footer";
+
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: $headingfont;
 }

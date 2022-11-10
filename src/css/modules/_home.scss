@@ -1,0 +1,234 @@
+#hero-section {
+    padding: 90px 0;
+    padding-top: 200px;
+    background-image: url('../img/background-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    #hero-content {
+        margin-top: 50px;
+        #right-shapes, #left-shapes {
+            display: none;
+        }
+        #footer-left-shapes, #red-diamond {
+            display: none;
+        }
+        h1, h2, h3, p {
+            font-family: $headingfont;
+            text-align: center;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: bold;
+            color: $white;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: $white;
+        }
+        #tagline {
+            font-size: 18px;
+            font-weight: 300;
+            color: $white;
+        }
+        #date-section {
+            margin: 50px 0;
+            .hero-text {
+                font-size: 22px;
+                font-weight: 300;
+                color: $white;
+            }
+            h3 {
+                color: $orange;
+                font-size: 45px;
+                font-weight: bold;
+            }
+        }
+        #ticket-button {
+            margin: auto;
+            margin-bottom: 20px;
+            @include button;
+            background-color: $orange;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        #ticket-button:hover {
+            color: $red;
+        }
+        a {
+            text-decoration: none;
+        }
+        #donate-button {
+            margin: auto;
+            @include button;
+            background-color: $red;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+    
+        #donate-button:hover {
+            color: $orange;
+        }
+    }
+}
+
+
+@media screen and (min-width: 420px) {
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #hero-section {
+        #hero-content {
+            margin-top: 80px;
+            #right-shapes {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 190px;
+                height: 410px;
+            }
+            #left-shapes {
+                display: block;
+                position: absolute;
+                top: 438px;
+                height: 518px;
+            }
+            #footer-left-shapes {
+                display: block;
+                position: absolute;
+                left: 0;
+                height: 200px;
+                top: 4500px;
+            }
+            #red-diamond {
+                display: block;
+                position: absolute;
+                right: 0;
+                height: 160px;
+                top: 4520px;
+            }
+            #button-container {
+                display: flex;
+                justify-content: center;
+                #ticket-button, #donate-button {
+                    display: inline-block;
+                    margin: 0;
+                }
+                #ticket-button {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    #hero-section {
+        padding: 220px 0 120px 0;
+        #hero-content {
+            #right-shapes {
+                position: absolute;
+                right: 0;
+                top: 240px;
+                height: 495px;
+            }
+            #left-shapes {
+                position: absolute;
+                top: 272px;
+                height: 690px;
+            }
+            #footer-left-shapes {
+                display: block;
+                position: absolute;
+                left: 0;
+                height: 245px;
+                top: 3365px;
+            }
+            #red-diamond {
+                display: block;
+                position: absolute;
+                right: 0;
+                height: 230px;
+                top: 3404px;
+            }
+            h1 {
+                font-size: 55px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1109px) {
+    #hero-section {
+        #hero-content {
+            #red-diamond {
+                top: 3354px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #hero-section {
+        #hero-content {
+            #red-diamond {
+                top: 3496px;
+            }
+            #footer-left-shapes {
+                top: 3525px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    #hero-section {
+        height: 950px;
+        #hero-content {
+            margin-top: 50px;
+            #right-shapes {
+                position: absolute;
+                right: 0;
+                top: 190px;
+            }
+            #left-shapes {
+                position: absolute;
+                top: 230px;
+                height: 800px;
+            }
+            #footer-left-shapes {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 3816px
+            }
+            #red-diamond {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 3824px;
+                height: 250px;
+            }
+            h1 {
+                font-size: 80px;
+            }
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+}

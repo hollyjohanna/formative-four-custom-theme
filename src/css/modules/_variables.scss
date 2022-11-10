@@ -1,14 +1,45 @@
 //=======================================================
 //                          FONTS
 //=======================================================
-$headingfont: 'Cinzel', serif;
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400&display=swap');
+$mainfont: 'Roboto', sans-serif;
+$headingfont: 'Lato', sans-serif;
 
 //=======================================================
 //                         COLOURS
 //=======================================================
-
+$orange: #F7941C;
+$red: #AC0232;
+$brown: #451C10;
+$black: #000000;
+$white: #FFFFFF;
+$grey: #E9E9E9;
+$lightorange: #FEF4E8;
 
 //=======================================================
 //                          MIXINS
 //=======================================================
+@mixin button {
+    padding: 20px;
+    width: 170px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    font-size: 23px;
+    font-family: $headingfont;
+}
+
+@mixin page-btn {
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    font-family: $headingfont;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}

@@ -1,0 +1,95 @@
+#gallery-container {
+    background-color: $grey;
+    padding: 50px 30px;
+    #home-pg-gallery {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+            width: 100%;
+            text-align: center;
+            font-family: $headingfont;
+            color: $red;
+            font-weight: 400;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .img-container {
+            width: 100%;
+            height: 230px;
+            .gallery-img {
+                padding: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        @include button;
+        margin-top: 20px;
+        margin: auto;
+        width: 200px;
+        background-color: $red;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    button:hover {
+        color: $orange;
+    }
+}
+
+
+@media screen and (min-width: 420px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    #gallery-container {
+        #home-pg-gallery {
+            .img-container {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #gallery-container {
+        padding: 70px;
+        #home-pg-gallery {
+            margin-bottom: 25px;
+            .img-container {
+                width: 25%;
+            }
+            .gallery-img:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #gallery-container {
+        padding: 100px 150px;
+        #home-pg-gallery {
+            margin-bottom: 30px;
+            h3 {
+                font-size: 35px;
+            }
+            .img-container {
+                width: 25%;
+                height: 270px;
+            }
+            .gallery-img:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}

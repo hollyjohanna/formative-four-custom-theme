@@ -1,0 +1,111 @@
+#newsletter-container {
+    padding: 30px 30px 100px;
+    #newsletter-text {
+        text-align: center;
+        margin-bottom: 35px;
+        h3 {
+            width: 100%;
+            font-family: $headingfont;
+            color: $orange;
+            font-weight: 400;
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        p {
+            font-family: $mainfont;
+            margin-bottom: 10px;
+            line-height: 30px;
+            font-size: 18px;
+        }
+    }
+    #newsletter-content {
+        img {
+            display: none;
+        }
+        #newsletter-form {
+            input {
+                width: 100%;
+                font-family: $headingfont;
+                font-size: 22px;
+                padding: 10px 7px;
+                border: 1px solid black;
+                border-radius: 7px;
+                margin-bottom: 20px;
+            }
+            a {
+                text-decoration: none
+            }
+            button {
+                @include button;
+                margin: auto;
+                width: 200px;
+                background-color: $red;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+            }
+            button:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 420px) {
+
+}
+@media screen and (min-width: 768px) {
+    #newsletter-container {
+        padding: 30px 100px 100px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #newsletter-container {
+        #newsletter-content {
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                display: block;
+                width: 50%;
+                padding-right: 15px;
+                max-height: 271px;
+                object-fit: cover;
+            }
+            form {
+                width: 50%;
+                padding-left: 15px;
+            }
+            #newsletter-form {
+                button {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    #newsletter-container {
+        padding: 30px 250px 100px;
+        #newsletter-text {
+            margin-bottom: 60px;
+            h3 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 21px;
+            }
+        }
+        #newsletter-content {
+            img {
+                padding-right: 15px;
+                max-height: 292px;
+                object-fit: cover;
+            }
+            #newsletter-form {
+                button {
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

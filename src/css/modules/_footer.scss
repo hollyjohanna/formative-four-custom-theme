@@ -1,0 +1,110 @@
+#footer {
+    background-color: $brown;
+    padding: 40px;
+    color: $white;
+    font-family: $mainfont;
+    .footer-links {
+        margin-bottom: 30px;
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        p:hover {
+            color: $orange
+        }
+        ul {
+            list-style-type: none;
+            li {
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                font-weight: 100;
+            }
+            li:hover {
+                color: $orange;
+            }
+        }
+    }
+    #socials-container {
+        display: flex;
+        justify-content: center;
+        color: $white;
+        font-size: 25px;
+        margin-top: 40px;
+        svg {
+            margin-right: 12px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        svg:hover {
+            color: $orange;
+        }
+    }
+}
+
+#lower-footer {
+    background-color: $orange;
+    padding: 20px;
+    color: $white;
+    font-family: $mainfont;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 420px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+    #footer {
+        #link-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 40px;
+            .footer-links {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #footer {
+        #link-container {
+            justify-content: center;
+            padding: 0 120px;
+            .footer-links {
+                width: 30%;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    #footer {
+        #link-container {
+            justify-content: center;
+            padding: 0 280px;
+            .footer-links {
+                width: 30%;
+            }
+        }
+        #socials-container {
+            font-size: 35px;
+            svg {
+                margin-right: 30px;
+            }
+        }
+    }
+    #lower-footer {
+        p {
+            font-size: 16px;
+        }
+    }
+}

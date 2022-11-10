@@ -1,8 +1,18 @@
+import Hero from "./../components/Hero";
+import News from "./../components/News";
+import AboutSection from "../components/AboutSection";
+import Gallery from "../components/Gallery";
+import NewsletterSection from "../components/NewsletterSection";
+
 const Home = () => {
   return (
-    <div>
-      <h3>Home Page</h3>
-    </div>
+    <>
+      <Hero />
+      <AboutSection />
+      <Gallery />
+      <News />
+      <NewsletterSection />
+    </>
   );
 };
 

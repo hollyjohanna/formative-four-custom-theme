@@ -1,0 +1,299 @@
+//==================================================================
+//                          HOME PAGE NEWS
+//==================================================================
+#nav-background {
+    height: 150px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 9%, rgba(230,224,223,1) 23%, rgba(194,180,176,1) 40%, rgba(171,152,146,1) 53%, rgba(69,28,16,1) 100%);
+}
+
+#news-section {
+    padding: 50px 30px;
+    #news-home-pg-header {
+        width: 100%;
+        text-align: center;
+        font-family: $headingfont;
+        color: $orange;
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .news-item {
+        padding: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $lightorange;
+        .featured-img {
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+            object-position: top;
+        }
+        h3 {
+            margin-top: 15px;
+            width: 100%;
+            font-family: $headingfont;
+            color: $red;
+            font-weight: 400;
+            font-size: 25px;
+        }
+        #date {
+            margin-top: 5px;
+            font-family: $mainfont;
+            font-style: italic;
+            color: $orange;
+        }
+        .content {
+            margin-top: 15px;
+            height: 153px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-family: $mainfont;
+        }
+        a {
+            text-decoration: none;
+        }
+        #news-item-button {
+            margin-top: 15px;
+            color: $orange;
+            font-family: $mainfont;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        #news-item-button:hover{
+            color: $red;
+        }
+    }
+}
+
+//==================================================================
+//                       INDIVIDUAL NEWS
+//==================================================================
+
+#news-page {
+    padding: 30px;
+    h2 {
+        font-family: $headingfont;
+        color: $red;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    #date {
+        margin-top: 5px;
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        color: $orange
+    }
+    a {
+        text-decoration: none;
+    }
+    .category-pill {
+        background-color: $red;
+        color: white;
+        font-family: $mainfont;
+        font-size: 13px;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 5px 0;
+    }
+    #news-img {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .news-content {
+        margin-top: 20px;
+        font-family: $mainfont;
+        font-size: 16px;
+        line-height: 21px;
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    #back-button {
+        @include page-btn;
+        background-color: $orange;
+        margin-right: 10px;
+        svg {
+            margin-bottom: -2px;
+            margin-right: 2px;
+        }
+    }
+    #back-button:hover {
+        color: $red
+    }
+    #all-news-redirect {
+        @include page-btn;
+        background-color: $red;
+        svg {
+            margin-bottom: -2px;
+            margin-right: 2px;
+        }
+    }
+    #all-news-redirect:hover {
+        color: $orange;
+    }
+}
+#recent-news {
+    display: none;
+}
+
+//==================================================================
+//                      NEWS CATEGORY PAGE STYLES
+//==================================================================
+
+#category-name {
+    padding: 30px 30px 0 30px;
+    font-family: $headingfont;
+    color: $red;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#buttons-category-pg {
+    padding: 0 0 30px 30px;
+    #back-button-categories {
+        @include page-btn;
+        background-color: $orange;
+        margin-right: 10px;
+        svg {
+            margin-bottom: -2px;
+            margin-right: 2px;
+        }
+    }
+    #back-button-categories:hover {
+        color: $red
+    }
+    #all-news-redirect-categories {
+        @include page-btn;
+        background-color: $red;
+        svg {
+            margin-bottom: -2px;
+            margin-right: 2px;
+        }
+    }
+    #all-news-redirect-categories:hover {
+        color: $orange;
+    }
+}
+
+@media screen and (min-width: 550px) {
+
+    #news-page {
+        #news-img {
+            height: 500px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #news-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .news-item {
+            width: 49%;
+        }
+    }
+    #news-page {
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #news-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 70px 30px;
+        .news-item {
+            width: 32%;
+        }
+    }
+    #news-page-container {
+        display: flex;
+        flex-wrap: wrap;
+        #recent-news {
+            display: block;
+            padding: 30px 0;
+            padding-right: 50px;
+            width: 35%;
+            text-align: right;
+            h3 {
+                font-family: $headingfont;
+                color: $red;
+                font-size: 25px;
+                font-weight: 400;
+                margin-bottom: 38px;
+            }
+            #news-list {
+                margin-top: 30px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    h4 {
+                        font-family: $headingfont;
+                        font-size: 18px;
+                        font-weight: 300;
+                        cursor: pointer;
+                        transition: all .3s ease-in-out;
+                    }
+                    h4:hover {
+                        color: $red;
+                    }
+                }
+                p {
+                    font-family: $mainfont;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    font-family: $mainfont;
+                    font-style: italic;
+                    color: $orange;
+                }
+            }
+        }
+        #news-page {
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    //category page styles
+    #category-name {
+        padding: 30px 0 0 50px;
+    }
+
+    #news-section {
+        #news-home-pg-header {
+            font-size: 35px;
+        }
+        .news-item {
+            .featured-img {
+                height: 300px;
+            }
+        }
+    }
+    #news-page {
+        padding: 50px 50px 100px 100px;
+    }
+    #news-page-container {
+        #recent-news {
+            padding: 50px 100px 0 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #news-section {
+        padding: 100px 150px;
+    }
+}
